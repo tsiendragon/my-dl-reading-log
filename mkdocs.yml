@@ -1,0 +1,260 @@
+site_name: "Generative AI: From Start to Surrender"
+nav:
+  - Home: index.html
+  - Introduction:
+      - Terms: book/chapter1_Introduction/1.1terminology.md
+      - Fourier Transform: book/chapter1_Introduction/1.2fourier_transform.md
+      - Signal Processing: book/chapter1_Introduction/1.3signal_processing.md
+      - Statistics: book/chapter1_Introduction/1.4statistics.md
+      - Tutorials: book/chapter1_Introduction/tutorials.md
+  - Generation Theory:
+      - Maximal Likelihood: book/chapter2_generation_theory/mle.md
+      - Manifold Hypothesis: book/chapter2_generation_theory/manifold_hypothesis.md
+      - Generative Model Category: book/chapter2_generation_theory/generative_model_category.md
+
+  - Energy Based Models:
+      - Introduction: book/chapter3_energy_based_model/introduction.md
+      - Score Functions: book/chapter3_energy_based_model/score_function.md
+      - Sampling Methods: book/chapter3_energy_based_model/sampling.md
+      - Contrastive Divergence: book/chapter3_energy_based_model/cd.md
+      - Score Matching: book/chapter3_energy_based_model/score_matching.md
+  - VAE:
+      - Introduction: book/chapter6_VAE/vae_introduction.md
+      - VA-VAE: book/chapter6_VAE/vq_vae.md
+  - GANs:
+      - From GAN to StyleGAN: book/chapter5_GAN/3.1from_gan_to_stylegan/paper.md
+      - StyleGAN Variants:
+          - StyleGAN: book/chapter5_GAN/3.3stylegan/paper.md
+          - StyleGAN2: book/chapter5_GAN/3.4stylegan2/paper.md
+          - StyleGAN3: book/chapter5_GAN/3.5stylegan3/paper.md
+          - StyleGAN-T: book/chapter5_GAN/3.6styleganT/paper.md
+      - R3GAN: book/chapter5_GAN/3.7R3Gan/paper.md
+      - VQ-GAN: book/chapter5_GAN/vq_gan.md
+
+  - Diffusion Models:
+      - Discrete Diffusion:
+          - DDPM: book/chapter7_diffusion/ddpm.md
+          - LDM: book/chapter7_diffusion/ldm.md
+          - LDM Handson: book/chapter7_diffusion/ldm_handson.md
+          - Diffusion Model Varients: book/chapter7_diffusion/diffusion_model_varients.md
+          - General Diffusion Model: book/chapter7_diffusion/general_diffusion_model.md
+      - SDE Diffusion:
+          - SDE Fundamentals: book/chapter7_diffusion/introduction_sde.md
+          - SDE for DDPM: book/chapter7_diffusion/from_ddpm_2_sde.md
+          - Score Based SDE: book/chapter7_diffusion/score_based_sde.md
+          - Probability Flow ODE: book/chapter7_diffusion/probability_flow_ode.md
+          - SDE Diffusion Speedup: book/chapter7_diffusion/sde_diffusion_speedup.md
+          - Scaling and Scheduling: book/chapter7_diffusion/sde_diffusion_unified_representation.md
+      - Diffusion Network:
+          - DiT: book/chapter7_diffusion/DiT.md
+      - Diffusion Solver:
+          - DPM Solver: book/chapter7_diffusion/diffusion_solver.md
+      - Conditional Diffusion:
+          - ControlNet: book/chapter7_diffusion/controlnet.md
+          - SDE Diffusion Guidance: book/chapter7_diffusion/sde_diffusion_guidance.md
+
+
+  - Flow Matching:
+      - Introduction: book/chapter9_flow_matching/introduction.md
+      - Probability Path and Velocity Fields: book/chapter9_flow_matching/probability_with_velocity_field.md
+      - Flow Matching Theorem: book/chapter9_flow_matching/flow_matching_theory.md
+      - Affine Conditional Flow: book/chapter9_flow_matching/affine_conditional_flows.md
+      - Optimal Transport Flow: book/chapter9_flow_matching/optimal_transport_flow.md
+      - Comparison with Diffusion Flow ODE: book/chapter9_flow_matching/comparison_with_flow_ode.md
+  - Hybrid SOTA Models:
+      - Hybrid Methods: book/chapter11_hybrid_sota_models/hybrid_methods.md
+      - Closed Models: book/chapter11_hybrid_sota_models/sota_closed_models.md
+      - Open Models:
+        - Dalle Series: book/chapter11_hybrid_sota_models/sota_open_models/dalle_series.md
+        - Stable Diffusion Series:
+          - Overview: book/chapter11_hybrid_sota_models/sota_open_models/stable_diffusion_series.md
+          - Stable Diffusion XL: book/chapter11_hybrid_sota_models/sota_open_models/stable_diffusion_xl.md
+          - Stable Diffusion 3: book/chapter11_hybrid_sota_models/sota_open_models/stable_diffusion_3_reading.md
+          - Stable Diffusion 3.5: book/chapter11_hybrid_sota_models/sota_open_models/stable_diffusion_3_5_reading.md
+        - Flux.1: book/chapter11_hybrid_sota_models/sota_open_models/flux1.md
+      - Future Trends: book/chapter11_hybrid_sota_models/trends_future.md
+  - Application:
+      - Anomaly Detection:
+          - Diffusion Anomaly Detection: book/chapter12_applications/diffusion_anomaly_detection.md
+      - Deepfake Detection:
+          - 总览: book/chapter12_applications/deepfake_detection_structured.md
+          - FOCAL: book/chapter12_applications/deepfake_detection/FOCAL.md
+          - PSCC-Net: book/chapter12_applications/deepfake_detection/PSCC-Net.md
+          - DeCLIP: book/chapter12_applications/deepfake_detection/DeCLIP.md
+          - FakeLocator: book/chapter12_applications/deepfake_detection/FakeLocator.md
+          - Weakly-supervised Deepfake Localization: book/chapter12_applications/deepfake_detection/Weakly-supervised Deepfake Localization.md
+          - FSBI: book/chapter12_applications/deepfake_detection/FSBI.md
+          - DE-FAKE: book/chapter12_applications/deepfake_detection/DE-FAKE.md
+          - DADF: book/chapter12_applications/deepfake_detection/DADF.md
+          - SIDA: book/chapter12_applications/deepfake_detection/SIDA.md
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+    - toc.integrate  # 集成页内目录
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.footnote.tooltips
+    - content.tooltips
+    - navigation.tracking # 导航栏跟踪
+    - search.highlight # 搜索高亮
+    - search.share # 搜索分享
+    - search.suggest # 搜索建议
+    - toc.follow # 目录跟踪-页面右侧的小目录
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.expand
+    - search.share
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  generator: false  #删除页脚显示"使用 MkDocs 材料制造"
+  social:
+    - icon: fontawesome/brands/github
+      link: https://mad-sg.github.io/generative-ai-start-to-surrender/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/squidfunk.bsky.social
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/squidfunk
+
+plugins:
+  - search
+  - glightbox
+  - blog # 博客功能插件
+  # - enumerate-headings:
+  #     toc_depth: 0
+  #     strict: true
+  #     increment_across_pages: False
+  #     include:
+  #       - "*"
+  #     exclude:
+  #       - index.md
+  #       - another_page.md
+  #     restart_increment_after:
+  #       - second_section.md
+  - add-number:
+      strict_mode: False
+      order: 2
+      excludes:
+        - index.md
+      includes:
+        - "*"
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true   # 在标题旁添加可点击的链接
+      toc_depth: 3      # 设置目录深度，例如只显示 h2 和 h3
+  - abbr
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - fenced_code  # 代码块高亮
+  - tables
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true  # 启用行号
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+#   - pymdownx.admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.emoji
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      auto_append:
+        - docs/includes/abbreviations.md
+        - docs/includes/definitions.md
+        - docs/includes/formulas.md
+
+
+# extra_javascript:
+#   - https://unpkg.com/katex@0/dist/katex.min.js
+#   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+#   - javascripts/katex-init.js  # Custom script to initialize KaTeX
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/core-js/3.26.1/minified.min.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+
+watch:
+  - docs/includes
