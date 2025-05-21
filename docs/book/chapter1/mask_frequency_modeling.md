@@ -15,6 +15,14 @@
 * Yew Soon Ong
 * Chen Change Loy
 
+# keywrods
+- pretrain learning
+- self-supervised learning
+- representation learning
+- mask pretraining
+- frequency representation learning
+
+
 # Reflection
 
 After reading this paper, I found the authors’ perspective on self-supervised visual pre-training both interesting and thought-provoking. They point out that most existing masked modeling methods—like Masked Language Modeling (MLM) and Masked Image Modeling (MIM)—are based on the corrupt-and-predict paradigm, where a portion of the input is masked and the model is trained to reconstruct the missing information.

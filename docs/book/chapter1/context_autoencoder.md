@@ -5,6 +5,11 @@
 * **Authors**: Xiaokang Chen, Mingyu Ding, Xiaodi Wang, Ying Xin, Shentong Mo, Yunhao Wang, Shumin Han, Ping Luo, Gang Zeng
 
 ---
+# keywrods
+- pretrain learning
+- self-supervised learning
+- representation learning
+- mask pretraining
 
 ## 🔍 What’s the paper about?
 
