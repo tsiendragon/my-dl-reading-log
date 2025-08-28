@@ -73,11 +73,17 @@ nav:
           - Stable Diffusion 3.5: book/chapter11_hybrid_sota_models/sota_open_models/stable_diffusion_3_5_reading.md
         - Flux.1: book/chapter11_hybrid_sota_models/sota_open_models/flux1.md
       - Future Trends: book/chapter11_hybrid_sota_models/trends_future.md
+  - Multi-Modal Large Language Models:
+      - 入门指南: book/MLLM/introduction.md
+      - 模型总览: book/MLLM/mml_list.md
+      - 架构解析: book/MLLM/mllm_structure.md
   - Application:
       - Anomaly Detection:
           - Diffusion Anomaly Detection: book/chapter12_applications/diffusion_anomaly_detection.md
       - Deepfake Detection:
           - 总览: book/chapter12_applications/deepfake_detection_structured.md
+          - LayerNorm微调检测: book/chapter1/deepfake_layernorm_finetune.md
+          - 自一致性检测: book/chapter1/self_consistency_deepfake.md
           - FOCAL: book/chapter12_applications/deepfake_detection/FOCAL.md
           - PSCC-Net: book/chapter12_applications/deepfake_detection/PSCC-Net.md
           - DeCLIP: book/chapter12_applications/deepfake_detection/DeCLIP.md
@@ -87,6 +93,9 @@ nav:
           - DE-FAKE: book/chapter12_applications/deepfake_detection/DE-FAKE.md
           - DADF: book/chapter12_applications/deepfake_detection/DADF.md
           - SIDA: book/chapter12_applications/deepfake_detection/SIDA.md
+      - Recent Papers:
+          - FatFormer: book/chapter1/FatFormer.md
+          - TALL: book/chapter1/TALL.md
 
 theme:
   name: material
