@@ -447,8 +447,8 @@ Let's explore the different numeric formats available and how to use them effect
 | **INT4** | 4    | Integer, −8 to 7 (or 0–15)               | Tiny range                           | Exact integers                                                 |
 
 ### Float Representation
-![alt text](../../images/image-10.png)
-![alt text](../../images/image-11.png)
+![Float Representation](https://raw.githubusercontent.com/tsiendragon/my-dl-reading-log/refs/heads/main/docs/images/image-10.png)
+![Float Representation Details](https://raw.githubusercontent.com/tsiendragon/my-dl-reading-log/refs/heads/main/docs/images/image-11.png)
 
 ### Calculation Formula
 #### FP32 (IEEE 754 Single Precision)
@@ -718,7 +718,7 @@ During training, the backward pass needs access to intermediate **activations** 
 ### Example
 
 Let's say we have a network, where $x$ is the input, $y$ is the output, and $\hat{y}$ is our prediction. Let's see how the gradient is calculated.
-![alt text](../../images/image-7.png)
+![Gradient Calculation Network](https://raw.githubusercontent.com/tsiendragon/my-dl-reading-log/refs/heads/main/docs/images/image-7.png)
 * $a_1 = w_1 x$, $a_2 = w_2 a_1$, $a_3 = w_3 a_2$, $\hat{y} = w_4 a_3$
 * Loss $\displaystyle \mathcal{L}=\tfrac12(\hat{y}-y)^2$
 
